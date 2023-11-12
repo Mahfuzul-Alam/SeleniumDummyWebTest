@@ -1,0 +1,95 @@
+package seleniumAssessment;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+
+@Test
+public class SeleniumAssessmentPom {
+	static WebElement element = null;
+	// In Login page
+		static String loginButton = "div.home div.header:nth-child(1) div.container nav.main_nav ul.nav-links div.actions.desktop:nth-child(4) li.signin:nth-child(1) > a:nth-child(1)";
+		public static WebElement loginButton(WebDriver driver) {
+		 element = driver.findElement(By.cssSelector(loginButton));
+			return element;
+		}
+		
+		// In Login: email textbox
+		public static WebElement email(WebDriver driver) {
+			element = driver.findElement(By.id("email"));
+			return element;
+		}
+		
+		// In Login: password textbox
+				public static WebElement password(WebDriver driver) {
+					element = driver.findElement(By.id("phone"));
+					return element;
+				}
+				
+				// In Login page
+				static String loginButton1 = "//button[contains(text(),'Login')]";
+				public static WebElement loginButton1(WebDriver driver) {
+				 element = driver.findElement(By.xpath(loginButton1));
+					return element;
+				}
+				
+				//sqa assessment button click
+				static String SqaAssessmentButton = "//body/div[@id='__next']/div[1]/section[1]/section[1]/main[1]/div[1]/div[3]/div[1]/div[2]/div[1]";
+				public static WebElement sqaAssessmentButton(WebDriver driver) {
+				 element = driver.findElement(By.xpath(SqaAssessmentButton));
+					return element;
+				}
+				
+				//work items button click
+				static String WorkItemsButton = "//span[contains(text(),'Work Items')]";
+				public static WebElement workItemsButton(WebDriver driver) {
+				 element = driver.findElement(By.xpath(WorkItemsButton));
+					return element;
+				}
+				
+				static String NewWorkItemsButton = "//body/div[@id='__next']/div[1]/div[3]/section[1]/section[1]/main[1]/div[1]/div[1]/button[1]";
+				public static WebElement newWorkItemsButton(WebDriver driver) {
+				 element = driver.findElement(By.xpath(NewWorkItemsButton));
+					return element;
+				}
+				
+				//epic button click
+				static String EpicButton = "//span[normalize-space()='Epic']";
+				public static WebElement epicButton(WebDriver driver) {
+				 element = driver.findElement(By.xpath(EpicButton));
+					return element;
+				}
+				
+				//title for epic 
+				
+				static String TitleEpicButton = "//input[@id='']";
+				public static WebElement titleEpicButton(WebDriver driver) {
+				 element = driver.findElement(By.xpath(TitleEpicButton));
+					return element;
+				}
+				//description for epic
+				
+				static String DescriptionEpicButton = "//body/div[4]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]";
+				public static WebElement descriptionEpicButton(WebDriver driver) {
+				 element = driver.findElement(By.xpath(DescriptionEpicButton));
+					return element;
+				}
+				
+				//epic save butoon
+				static String EpicSaveButton = "//body/div[4]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/button[1]";
+				public static WebElement epicSaveButton(WebDriver driver) {
+				 element = driver.findElement(By.xpath(EpicSaveButton));
+					return element;
+				}
+				
+				//epic message
+				static String EpicMessageButton = "//body/div[1]/div[1]/div[1]";
+				public static WebElement epicMessageButton(WebDriver driver) {
+				 element = driver.findElement(By.xpath(EpicMessageButton));
+					return element;
+				}
+				
+
+}
